@@ -1,0 +1,11 @@
+###############################################
+# Steps to add eclipse project to github repo
+###############################################
+##Track remote repo from current
+git remote add origin git@github.com:adarshcu/func-prog-in-scala.git
+## add all untracked files 
+git add -A
+## commit all the changes automatically with a message 
+git commit -a -m "Updated source folders"
+## push to master branch 
+git push -u origin master
