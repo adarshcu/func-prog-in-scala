@@ -12,7 +12,7 @@ object exercise2 {
 
   def product(f: Int => Int)(a: Int, b: Int): Int = mapReduce(f, (x, y) => x * y, 1)(a, b)
                                                   //> product: (f: Int => Int)(a: Int, b: Int)Int
-  //sum of products = fact
+  //calculate product from 1 to n = fact
   def fact(n: Int) = product(x => x)(1, n)        //> fact: (n: Int)Int
 
   def sumOfProducts(n: Int) = product(x => x + x)(1, n)
